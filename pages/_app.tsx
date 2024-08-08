@@ -15,6 +15,10 @@ export default function Nextra({ Component, pageProps }) {
 
   return getLayout(
     <SSRProvider>
+       <Head>
+        <title>Marcy | React</title>
+        <meta name="Intro to React" content="Website created for The Marcy Lab School's Intro to React course" />
+      </Head>
       <Component {...pageProps} />
     </SSRProvider>
   );
